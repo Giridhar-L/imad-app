@@ -5,12 +5,42 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var datatum={
+    'heading':'Article',
+    'date':'August 2, 2017',
+    'body':'This the body of the webpage'
+};
+
+function createTemplate(data)
+{
+    var heading=data.heading;
+    var date=data.date;
+    var body=data.body;
+    var html=`
+                <html>
+              <head>
+                  <title>$(heading)</title>
+                  </head>
+              <body>
+              <div>
+                $(date)
+              </div>
+              <hr/>
+              <div>
+                $(body)
+              </div>
+              </body>
+            </html>
+            `
+    return html
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
+  res.send(createTempalte(datum));
 });
 
 app.get('/ui/style.css', function (req, res) {
