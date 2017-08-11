@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var datatum={
+var datum={
     'heading':'Article',
     'date':'August 2, 2017',
     'body':'This the body of the webpage'
@@ -17,7 +17,7 @@ function createTemplate(data)
     var date=data.date;
     var body=data.body;
     var html=`
-                <html>
+            <html>
               <head>
                   <title>$(heading)</title>
                   </head>
@@ -31,8 +31,8 @@ function createTemplate(data)
               </div>
               </body>
             </html>
-            `
-    return html
+            `;
+    return html;
 }
 
 app.get('/', function (req, res) {
