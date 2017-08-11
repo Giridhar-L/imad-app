@@ -40,7 +40,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.send(createTempalte(datum));
+  res.send(createTemplate(datum));
 });
 
 app.get('/ui/style.css', function (req, res) {
