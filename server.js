@@ -19,15 +19,15 @@ function createTemplate(data)
     var html=`
             <html>
               <head>
-                  <title>$(heading)</title>
+                  <title>${heading}</title>
                   </head>
               <body>
               <div>
-                $(date)
+                ${date}
               </div>
               <hr/>
               <div>
-                $(body)
+                ${body}
               </div>
               </body>
             </html>
