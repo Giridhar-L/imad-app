@@ -4,7 +4,7 @@ var img=document.getElementById("dragon");
 var leftmargin = 0;
 
 function move(){
-    leftmargin=leftmargin+1;
+    leftmargin=leftmargin+2;
     img.style.marginLeft=leftmargin+'px';
     
 }
