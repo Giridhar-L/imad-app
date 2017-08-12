@@ -8,6 +8,6 @@ function move(){
     img.style.marginleft=leftmargin+'px';
     
 }
-img.onclick = function (){
-    var interval = interval(move,50);
+img.onclick() = function (){
+    var interval = setInterval(move,50);
 }
