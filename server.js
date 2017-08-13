@@ -19,6 +19,8 @@ function createTemplate(data)
     var html=`
             <html>
               <head>
+                  <style src="/ui/style.css">
+                  </style>
                   <title>${heading}</title>
                   </head>
               <body>
