@@ -11,3 +11,9 @@ function move(){
 img.onclick = function (){
     var interval = setInterval(move,50);
 }
+
+var counter=0
+document.getElementById("counter").onclick=function(){
+  counter = counter+1;
+  document.getElementById("value").innerHTML =counter.toString();
+};
