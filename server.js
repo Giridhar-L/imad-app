@@ -18,17 +18,17 @@ function createTemplate(data)
     var body=data.body;
     var html=`
             <html>
-              <head>
+              <head class="center">
                   <link href="/ui/style.css" rel="stylesheet" />
                   </style>
                   <title>${heading}</title>
                   </head>
               <body>
-              <div>
+              <div class="center">
                 ${date}
               </div>
               <hr/>
-              <div>
+              <div class="center">
                 ${body}
               </div>
               </body>
