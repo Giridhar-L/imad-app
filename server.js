@@ -18,6 +18,7 @@ function createTemplate(data)
     var body=data.body;
     var html=`
             <html>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
               <head class="center">
                   <link href="/ui/style.css" rel="stylesheet" />
                   </style>
