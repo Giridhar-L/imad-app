@@ -2,6 +2,9 @@ body {
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 75px;
+    padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .center {
@@ -20,11 +23,6 @@ body {
     height: 200px;
 }
 
-body{
-	padding-top: 15px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
 .tab{
 	align-items: left;
 	text-align: left;
