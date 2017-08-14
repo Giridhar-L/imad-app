@@ -12,8 +12,20 @@ img.onclick = function (){
     var interval = setInterval(move,50);
 }
 
-var counter=0
+
 document.getElementById("counter").onclick=function(){
-  counter = counter+1;
-  document.getElementById("value").innerHTML =counter.toString();
+    
+    var request = new XMLHttpRequest();
+    
+    if(request.readyState === XMLHttpRequest.DONE)
+        {
+            if(request.status === 200)
+            {
+                var counter = request.responseText;
+                document.getElementById("value").innerHTML =counter.toString();              
+            }
+        }
+        
+    request.open('GET','https://giridharprasad2897.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
