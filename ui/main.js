@@ -26,6 +26,6 @@ document.getElementById("counter").onclick=function(){
             }
         }
         
-    request.open('GET','https://giridharprasad2897.imad.hasura-app.io/counter',true);
+    request.open('GET','http://giridharprasad2897.imad.hasura-app.io/counter',true);
     request.send(null);
 };
