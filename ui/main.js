@@ -17,7 +17,7 @@ document.getElementById("counter").onclick=function(){
     
     var request = new XMLHttpRequest();
     
-    if(request.readyState === XMLHttpRequest.DONE)
+    if(request.onreadystatechange === XMLHttpRequest.DONE)
         {
             if(request.status === 200)
             {
