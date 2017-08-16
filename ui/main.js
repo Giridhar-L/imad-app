@@ -45,7 +45,13 @@ document.getElementById("btnid").onclick =function(){
       {
           if(request.status === 200)
           {
-              document.getElementById('list').innerHTML=JSON.parse(request.responseText);
+              var names = JSON.parse(request.responseText);
+              var list='';
+              for (var i=0; i<names.length; i++)
+              {
+                  list+="<li>"+names[i]+"</li>";
+              }
+              document.getElementById('list').innerHTML=list;
           }
       }
   }
