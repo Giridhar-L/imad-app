@@ -34,28 +34,12 @@ document.getElementById("counter").onclick=function(){
     request.send(null);
 };
 
-
-document.getElementById("btnid").onclick =function(){
-  var request = new XMLHttpRequest();
-    
-  var name=document.getElementById('inbox').value;
-  
-  request.onreadystatechange=function(){
-      if(request.readyState === XMLHttpRequest.DONE)
-      {
-          if(request.status === 200)
-          {
-            var list = ['name','hdi'];
-            var text ='';
-            for(var i=0;i<list.length;i++ )
-            {
-                text+='<li'+list[i]+'</li>';
-            }
-          }
-      }
-  }
-  
-  
-  request.open('GET','http://giridharprasad2897.imad.hasura-app.io/submitname?name='+name,true);
-  request.send(null);
-};
+document.getElementById('btnid').onclick =function(){
+    var list = ['name','fuck'];
+    text='';
+    for(var i=0;i<list.length;i++)
+    {
+        text+='<li>'+list[i]+'</li>';
+        
+    }
+}
