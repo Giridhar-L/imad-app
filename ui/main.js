@@ -34,6 +34,9 @@ document.getElementById("counter").onclick=function(){
     request.send(null);
 };
 
+document.getElementById('btnid').onclick= function(){
+    
+
     var list = ['name','fuck'];
     var text='';
     for(var i=0;i<list.length;i++)
@@ -42,3 +45,5 @@ document.getElementById("counter").onclick=function(){
         
     }
     document.getElementById("list").innerHTML = text;
+    
+}
