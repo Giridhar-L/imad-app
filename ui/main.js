@@ -42,4 +42,5 @@ document.getElementById('btnid').onclick =function(){
         text+='<li>'+list[i]+'</li>';
         
     }
+    document.getElementById('lsit').innerHTML=lsit;
 }
