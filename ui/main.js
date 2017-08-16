@@ -17,7 +17,9 @@ document.getElementById("counter").onclick=function(){
     
     var request = new XMLHttpRequest();
     
-    if(request.onreadystatechange === XMLHttpRequest.DONE)
+    request.onreadystatechange=function(){
+    
+        if(request.readyState === XMLHttpRequest.DONE)
         {
             if(request.status === 200)
             {
@@ -25,7 +27,10 @@ document.getElementById("counter").onclick=function(){
                 document.getElementById("value").innerHTML =counter.toString();              
             }
         }
-        
+            
+    }
+    
+    
     request.open('GET','http://giridharprasad2897.imad.hasura-app.io/counter',true);
     request.send(null);
 };
