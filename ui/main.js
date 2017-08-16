@@ -30,7 +30,27 @@ document.getElementById("counter").onclick=function(){
             
     }
     
-    
     request.open('GET','http://giridharprasad2897.imad.hasura-app.io/counter',true);
     request.send(null);
+};
+
+
+document.getElementById("btnid").onclick =function(){
+  var request = new XMLHttpRequest();
+    
+  var name=document.getElementById('inbox').value;
+  
+  request.onreadystatechange=function(){
+      if(request.readyState === XMLHttpRequest.DONE)
+      {
+          if(request.status === 200)
+          {
+              document.getElementById('list').innerHTML=JSON.parse(request.responseText);
+          }
+      }
+  }
+  
+  
+  request.open('GET','http://giridharprasad2897.imad.hasura-app.io/submitname?name='+name,true);
+  request.send(null);
 };
