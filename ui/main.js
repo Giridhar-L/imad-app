@@ -38,7 +38,7 @@ document.getElementById('btnid').onclick= function(){
     
 
     var list = ['name','fuck'];
-    var text=``;
+    var text='';
     for(var i=0;i<list.length;i++)
     {
         text+='<li>'+list[i]+'</li>';
@@ -46,4 +46,4 @@ document.getElementById('btnid').onclick= function(){
     }
     document.getElementById("list").innerHTML = text;
     
-}
+};
