@@ -41,4 +41,4 @@ document.getElementById("counter").onclick=function(){
         text+='<li>'+list[i]+'</li>';
         
     }
-    document.getElementById('lsit').innerHTML=lsit;
+    document.getElementById('lsit').innerHTML=list;
