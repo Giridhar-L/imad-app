@@ -35,7 +35,7 @@ document.getElementById("counter").onclick=function(){
 };
 
     var list = ['name','fuck'];
-    text='';
+    var text='';
     for(var i=0;i<list.length;i++)
     {
         text+='<li>'+list[i]+'</li>';
