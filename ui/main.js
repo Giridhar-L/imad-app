@@ -34,7 +34,8 @@ document.getElementById("counter").onclick=function(){
     request.send(null);
 };
 
-document.getElementById('btnid').onclick= function(){
+var button =document.getElementById('btnid');
+button.onclick= function(){
     
 
     var list = ['name','fuck'];
@@ -44,6 +45,7 @@ document.getElementById('btnid').onclick= function(){
         text+='<li>'+list[i]+'</li>';
         
     }
-    document.getElementById("list").innerHTML = text;
+    var ul=document.getElementById("list");
+    ul.innerHTML = text;
     
 };
