@@ -46,16 +46,17 @@ document.getElementById('btnid').onclick= function(){
         {
             if(request.status === 200)
             {
-                var list = JSON.parse(request.responseText);
+                var names =request.responseText;
+                names=JSON.parse(names);
                 
-                var text='';
-                    for(var i=0;i<list.length;i++)
+                var list='';
+                    for(var i=0;i<names.length;i++)
                     {
-                        text+='<li>'+list[i]+'</li>';
+                        list+='<li>'+names[i]+'</li>';
                         
                     }
                 
-                document.getElementById("lsit").innerHTML =text;              
+                document.getElementById("list").innerHTML =list;              
             }
         }
             
