@@ -62,7 +62,7 @@ document.getElementById('btnid').onclick= function(){
             
     }
     
-    request.open('GET','http://giridharprasad2897.imad.hasura-app.io/submitname?namw='+name,true);
+    request.open('GET','http://giridharprasad2897.imad.hasura-app.io/submitname?name='+name,true);
     request.send(null);
     
     
